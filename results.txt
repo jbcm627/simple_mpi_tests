@@ -1,0 +1,346 @@
+ 
+Running with OMP_NUM_THREADS=1
+------------------------------
+ 
+Running normally...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 1 OpenMP threads (with 1 threads max).
+Wall clock time passed on MPI process 0: 24.303413s.
+
+real	0m24.365s
+user	0m24.170s
+sys	0m0.204s
+ 
+Running using srun...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 1 OpenMP threads (with 1 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 0 of 1 OpenMP threads (with 1 threads max).
+Wall clock time passed on MPI process 0: 23.902009s.
+Wall clock time passed on MPI process 0: 23.989750s.
+
+real	0m24.203s
+user	0m0.011s
+sys	0m0.013s
+ 
+Running using mpirun...
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 1 OpenMP threads (with 1 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 1 OpenMP threads (with 1 threads max).
+Wall clock time passed on MPI process 1: 12.106577s.
+Wall clock time passed on MPI process 0: 12.240194s.
+
+real	0m12.541s
+user	0m12.222s
+sys	0m0.184s
+ 
+Running using mpiexec...
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 1 OpenMP threads (with 1 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 1 OpenMP threads (with 1 threads max).
+Wall clock time passed on MPI process 1: 12.072886s.
+Wall clock time passed on MPI process 0: 12.287965s.
+
+real	0m12.555s
+user	0m12.218s
+sys	0m0.150s
+ 
+Running with OMP_NUM_THREADS=2
+------------------------------
+ 
+Running normally...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 1 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 2 OpenMP threads (with 2 threads max).
+Wall clock time passed on MPI process 0: 23.916688s.
+
+real	0m23.980s
+user	0m39.579s
+sys	0m0.180s
+ 
+Running using srun...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 1 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 0 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 1 of 2 OpenMP threads (with 2 threads max).
+Wall clock time passed on MPI process 0: 12.143465s.
+Wall clock time passed on MPI process 0: 12.255180s.
+
+real	0m12.511s
+user	0m0.008s
+sys	0m0.010s
+ 
+Running using mpirun...
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 1 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 1 of 2 OpenMP threads (with 2 threads max).
+Wall clock time passed on MPI process 1: 11.682366s.
+Wall clock time passed on MPI process 0: 12.119740s.
+
+real	0m12.349s
+user	0m12.083s
+sys	0m0.160s
+ 
+Running using mpiexec...
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 1 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 2 OpenMP threads (with 2 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 1 of 2 OpenMP threads (with 2 threads max).
+Wall clock time passed on MPI process 0: 12.073422s.
+Wall clock time passed on MPI process 1: 12.181133s.
+
+real	0m12.483s
+user	0m12.036s
+sys	0m0.148s
+ 
+Running with OMP_NUM_THREADS=4
+------------------------------
+ 
+Running normally...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 2 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 1 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 3 of 4 OpenMP threads (with 4 threads max).
+Wall clock time passed on MPI process 0: 7.805064s.
+
+real	0m7.867s
+user	0m29.017s
+sys	0m0.177s
+ 
+Running using srun...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 2 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 1 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 3 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 3 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 1 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 0 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 2 of 4 OpenMP threads (with 4 threads max).
+Wall clock time passed on MPI process 0: 5.840033s.
+Wall clock time passed on MPI process 0: 6.389717s.
+
+real	0m6.634s
+user	0m0.010s
+sys	0m0.006s
+ 
+Running using mpirun...
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 3 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 2 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 1 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 3 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 2 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 1 of 4 OpenMP threads (with 4 threads max).
+Wall clock time passed on MPI process 1: 12.079145s.
+Wall clock time passed on MPI process 0: 12.131245s.
+
+real	0m12.409s
+user	0m12.124s
+sys	0m0.175s
+ 
+Running using mpiexec...
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 3 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 2 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 1 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 3 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 2 of 4 OpenMP threads (with 4 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 1 of 4 OpenMP threads (with 4 threads max).
+Wall clock time passed on MPI process 0: 12.072851s.
+Wall clock time passed on MPI process 1: 12.203598s.
+
+real	0m12.498s
+user	0m12.070s
+sys	0m0.118s
+ 
+Running with OMP_NUM_THREADS=8
+------------------------------
+ 
+Running normally...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 3 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 1 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 6 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 5 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 7 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 4 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 2 of 8 OpenMP threads (with 8 threads max).
+Wall clock time passed on MPI process 0: 3.690183s.
+
+real	0m3.799s
+user	0m29.300s
+sys	0m0.249s
+ 
+Running using srun...
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 6 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 7 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 1 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 5 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 4 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 0 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 2 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp155t
+   > I am running in thread 3 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 2 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 6 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 7 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 5 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 1 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 0 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 3 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 1 running on comp156t
+   > I am running in thread 4 of 8 OpenMP threads (with 8 threads max).
+Wall clock time passed on MPI process 0: 3.792096s.
+Wall clock time passed on MPI process 0: 4.307366s.
+
+real	0m4.448s
+user	0m0.008s
+sys	0m0.009s
+ 
+Running using mpirun...
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 5 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 6 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 7 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 4 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 3 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 2 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 1 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 5 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 6 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 7 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 4 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 3 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 2 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 1 of 8 OpenMP threads (with 8 threads max).
+Wall clock time passed on MPI process 1: 12.326749s.
+Wall clock time passed on MPI process 0: 12.405596s.
+
+real	0m12.716s
+user	0m12.353s
+sys	0m0.156s
+ 
+Running using mpiexec...
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 0 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 7 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 5 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 6 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 4 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 3 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 2 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 0 / 2 running on comp155t
+   > I am running in thread 1 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 0 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 5 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 7 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 6 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 4 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 3 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 2 of 8 OpenMP threads (with 8 threads max).
+ Hello from MPI process 1 / 2 running on comp156t
+   > I am running in thread 1 of 8 OpenMP threads (with 8 threads max).
+Wall clock time passed on MPI process 0: 12.154892s.
+Wall clock time passed on MPI process 1: 12.256454s.
+
+real	0m12.549s
+user	0m12.132s
+sys	0m0.129s
