@@ -1,11 +1,13 @@
 #!/bin/bash
 
 #SBATCH -N 2
-#SBATCH -c 11
+#SBATCH -n 2
+#SBATCH -c 16
 #SBATCH -t 00:20:00
 
-module load openmpi-gnu/1.8.5
-mpic++ main.cc --std=c++11 -Wall -fopenmp -O3
+module load openmpi/1.8.5
+module load intel/2015
+mpic++ main.cc -std=c++11 -Wall -openmp -O3 -xHost
 
 # try running using different commands
 
@@ -38,7 +40,7 @@ echo "Running using srun..."
 time srun ./a.out
 echo " "
 echo "Running using mpirun..."
-time mpirun ./a.out
+time mpirun --map-by ppr:2:socket ./a.out
 echo " "
 echo "Running using mpiexec..."
 time mpiexec ./a.out
